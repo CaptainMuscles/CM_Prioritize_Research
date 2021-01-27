@@ -26,7 +26,7 @@ namespace CM_Prioritize_Research
 
                 List<CodeInstruction> instructionList = instructions.ToList();
 
-                // Find where we check if the job is research only happens in one place if it hasn't been changed
+                // Find where we check if the job is research. Only happens in one place if it hasn't been changed
                 int index = instructionList.FindIndex(instruction => instruction.LoadsField(jobDefOfResearchFieldInfo));
                 if (index >= 2 && index < instructionList.Count - 5)
                 {
