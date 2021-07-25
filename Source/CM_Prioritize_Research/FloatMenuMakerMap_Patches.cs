@@ -15,8 +15,8 @@ namespace CM_Prioritize_Research
     public static class FloatMenuMakerMap_Patches
     {
         [HarmonyPatch(typeof(FloatMenuMakerMap))]
-        [HarmonyPatch("AddJobGiverWorkOrders_NewTmp", MethodType.Normal)]
-        public static class FloatMenuMakerMap_AddJobGiverWorkOrders_NewTmp
+        [HarmonyPatch("AddJobGiverWorkOrders", MethodType.Normal)]
+        public static class FloatMenuMakerMap_AddJobGiverWorkOrders
         {
             [HarmonyTranspiler]
             public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
